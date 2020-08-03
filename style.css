@@ -1,31 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
 body{ 
     margin: 0;
-    padding: 0;
+    padding: 0;   
 }
 
-body .titulo {
-    background-color: #9999;
-   
+h1, h2, p, li {
+    font-family: 'Roboto', sans-serif;
 }
 
-body .texto {
-    background-color: black;
-    
+body h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 15px; 
+    color: black;
 } 
-
-body h1 {
-    color: red;
+body .container{
+    display:  flex;
+    flex-direction: row;
+    
 }
 
+body .caixa {
+    background-color: #999;
+    margin-top: 50px;
+    width: 400pxx;
+    padding: 20px;
+    margin-left: 15px;
+    border-radius: 10px;    
+} 
+body .caixa .linha{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+body .caixa .linha p + p{
+    margin-left: 10px;
+}
+body .caixa h2{
+    color: white;
+}
+body .caixa ul li {
+    color: white;
+    font-size: 20px;
+}
 body p {
-    color: blue;
+    color:purple;
 }
+
  body .imagem {
      display: flex;
-     flex-direction: column-reverse;
+     flex-direction: row;
+     align-items: center;
  } 
 
 body .imagem img {
-     width: 150px;
-     height: 150px;
+     width: 180px;
+     height: 180px;
+     margin-left: 15px;
+     border-radius: 50%;
+     border: 3px solid black;
+ }
+ body .imagem p{
+     color: black;
+     font-size: 30px;
+     margin-left: 15px;
  }
